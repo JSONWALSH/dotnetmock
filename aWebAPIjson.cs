@@ -1,4 +1,4 @@
-        //GET json /api/values/getAirports?  all optional
+        //GET json /api/values/getAirports?  all optional params
         [AllowAnonymous, ActionName("getAirports")]
         public IEnumerable<string> getAirports([FromUri] int? pid = 0, [FromUri] string iata = null, [FromUri] string name = null, StringComparison? ignoreCase = null)
         {
